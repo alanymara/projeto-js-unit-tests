@@ -35,6 +35,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(typeof products[0] && typeof products[1]).toEqual('object');// Teste se os dois itens dentro do array retornado pela função são objetos.
     const objects = [{ name: 'alcool', details: { productId: 'alcool123' }}, { name: 'máscara', details: { productId: 'máscara123' }}]// Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
     expect(products).toEqual(objects);
+    //expect(products[0] === products [1]).toEqual(false);
     expect(products[0].details.productId.slice(-3)).toBe('123');
     expect(products[1].details.productId.slice(-3)).toBe('123');
   });
